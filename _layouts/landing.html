@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta charset="utf-8">
+  {% include seo.html %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+</head>
+<body>
+  {% include nav.html %}
+  <main>
+    <section class="hero">
+      <div>
+        <div>
+          <h3>From the research desk of <span class="no-break">Benjamin J. Anderson, Ed.D.</span></h3>
+          <p>Powered by Coffee and Data.</p>
+        </div>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <header>
+              <img src="/assets/images/headers/dissertation.webp" width="100%" height="100%" />
+              <div>
+                <p><span class="icon fa-solid fa-book"></span> Dissertation <a class="btn blue" href="https://digital.library.wisc.edu/1793/94775" target="_blank">Read</a></p>
+              </div>
+            </header>
+            <footer>
+              <h4>A Definition of Rurality</h4>
+              <p>A Sequential Quantitative Analysis Aligning Education to Geography</p>
+            </footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>

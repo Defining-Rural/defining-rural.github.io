@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta charset="utf-8">
+  {% include seo.html %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+</head>
+<body class="{{page.classes}}">
+  {% include nav.html %}
+  <main class="page">
+    <header>
+      <div class="gallery" role="img" aria-label="{{page.imgaria}}" title="{{page.imgaria}}" style="background-image: url({{page.background_image}})"></div>
+    </header>
+    <div class="content">
+      <div class="heading-container">
+        {% if page.circle_image %}
+        <img src="{{page.circle_image}}" />
+        {% endif %}
+        <h2>{{page.title}}</h2>
+        <p>{{page.byline}}</p>
+        <p>{{page.byline_author}}</p>
+      </div>
+      {{ content }}
+    </div>
+  </main>
+  <footer></footer>
+</body>

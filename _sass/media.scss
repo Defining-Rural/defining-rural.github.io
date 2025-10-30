@@ -1,0 +1,27 @@
+@media all and (max-width: 992px) {
+  body > header {
+    display: block !important;
+    height: auto;
+  }
+
+  body > header > h1 img {
+    margin: 0 auto;
+  }
+
+  body > header > nav {
+    text-align: center;
+  }
+
+   body > header > nav ul {
+     padding: 0;
+     margin-top: 2em;
+   }
+
+  body > header > nav ul > li {
+    padding: 0.5em 2em;
+  }
+
+  section.hero > div h3 {
+    font-size: 150%;
+  }
+}
