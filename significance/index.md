@@ -7,6 +7,8 @@ byline: "\"In a rural-urban dichotomy, the locale
 system lacks sensitivity to local variations, and up to 98.1% of places an urban school district
 administrates may be considered rural.\""
 byline_author: "Benjamin J. Anderson, A Definition of Rurality, 2024."
+seo_keywords: "education policy"
+seo_description: "Definitions of rural and urban shape public policies, creating legislative action that lessens impediments, builds prospects, or offers other motivations influencing policymaking decisions"
 ---
 
 <section class="infopanelgroup">

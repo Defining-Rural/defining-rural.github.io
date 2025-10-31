@@ -1,8 +1,6 @@
 ---
 layout: landing
-title: "Aligning Geography to Education"
+title: "Aligning Education to Geography"
+seo_keywords: "education alignment"
+seo_description: "From the research desk of Benjamin J. Anderson: Defining Rurality - Aligning Education to Geography."
 ---
-
-## You're ready to go!
-
-Start developing your Jekyll website.

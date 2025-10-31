@@ -6,6 +6,8 @@ imgaria: "Benjamin J. Anderson and family"
 title:  "Benjamin J. Anderson"
 byline: "\"Pathetic creature of meat and bone, panting and sweating as you run through my corridors, how can you hope to challenge a perfect, immortal machine?\""
 byline_author: "SHODAN, System Shock"
+seo_keywords: "about defining rurality"
+seo_description: "About Defining Rurality - Aligning Education and Geography."
 ---
 
 <section class="content grid two-thirds">
