@@ -28,6 +28,14 @@ h1,h2,h3,h4,h5 {
   padding: 0;
 }
 
+figure {
+  figcaption {
+    font-size: 100%;
+    font-style: italic;
+    padding: 1em 0;
+  }
+}
+
 .rel {
   position: relative;
 }
@@ -76,6 +84,14 @@ h1,h2,h3,h4,h5 {
     font-weight: 500;
     font-size: 125%;
   }
+
+  .text-container {
+    padding: 1em;
+  }
+
+  p {
+    font-size: 115%;
+  }
 }
 
 .circle {
@@ -123,12 +139,21 @@ section.stripe {
     font-weight: 400;
     padding: 1em 0;
   }
+
+  p:first-of-type {
+    padding-top: 2em;
+  }
+
+  p:last-of-type {
+    padding-bottom: 2em;
+  }
 }
 
 .grid {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   &.two-thirds {
     & > div {
       padding: 1em;
@@ -136,6 +161,18 @@ section.stripe {
     & > div:first-of-type {
       grid-column: span 2;
     }
+  }
+
+  &.split {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+
+  &.three-columns {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .span-2 {
+    grid-column: span 2;
   }
 }
 
@@ -335,6 +372,10 @@ main.page {
   & > div.content {
     position: absolute;
     top: 33%;
+
+    & > section {
+      background-color: $colorMediumGray;
+    }
   }
 
   .infopanelgroup {

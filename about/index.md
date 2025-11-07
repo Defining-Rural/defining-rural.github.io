@@ -20,12 +20,14 @@ seo_description: "About Defining Rurality - Aligning Education and Geography."
         It was towards the end of the COVID-19 pandemic that SHODAN's quote from "System Shock" came to mind. As a former student turned adjunct faculty, it was disheartening to walk the halls once filled with conversation completely void. Places dedicated to student life consumed by administrative offices and a commons area silent enough that you can hear a paperclip strike the carpet. It was this perspective that prompted the thought that, even without the students, a "perfect" educational institution would manage to persist.
       </p>
 
-      <p class="centered">
-        <em>To address the complexity of rurality, researchers and Federal agencies use definitions
-that best support their goals, introducing a new set of measurement challenges.</em>
-      </p>
-      <p class="right">Cromartie &
-Bucholtz, 2008; United States Department of Health and Human Services, 2020</p>
+      <section class="stripe">
+        <p class="centered">
+          <em>To address the complexity of rurality, researchers and Federal agencies use definitions
+  that best support their goals, introducing a new set of measurement challenges.</em>
+        </p>
+        <p class="right">Cromartie &
+  Bucholtz, 2008; United States Department of Health and Human Services, 2020</p>
+      </section>
 
       <p>
         Toward the end of the COVID-19 pandemic, SHODAN's quote from System Shock came to mind. As a former student turned adjunct faculty member, I found it disheartening to walk through halls once filled with conversation, now empty. Spaces once dedicated to student life had been consumed by administrative offices, and the commons area was so quiet that a falling paperclip could be heard striking the carpet. From this perspective, I began to consider whether an ostensibly "perfect" educational institution might continue to operate - even without students.
@@ -38,15 +40,17 @@ Bucholtz, 2008; United States Department of Health and Human Services, 2020</p>
       <p>
         The resulting dissertation sought to mathematically model rural and urban populations using socio-ethnic variables rather than geographic distance. My objective was to avoid Waldorf's (2006) "threshold trap" while leveraging established classification systems such as the National Center for Education Statistics' locale framework and the U.S. Census Bureau's Census Block data. Unexpectedly, the model revealed"“pocket communities" within every locale where rural conditions and behaviors manifested regardless of official designation.</p>
 
-      <p class="centered">
-        <em>The context should not be what is rural and what
-is urban; it appears this is not the correct question as the rural condition does not map into
-geographic areas delineated in existing data sources. Instead, any future inquiry should be into
-the barriers that prevent places needing aid from receiving it.</em>
-      </p>
-      <p class="right">
-        Benjamin J. Anderson, A Definition of Rurality, 2024
-      </p>
+      <section class="stripe">
+        <p class="centered">
+          <em>The context should not be what is rural and what
+  is urban; it appears this is not the correct question as the rural condition does not map into
+  geographic areas delineated in existing data sources. Instead, any future inquiry should be into
+  the barriers that prevent places needing aid from receiving it.</em>
+        </p>
+        <p class="right">
+          Benjamin J. Anderson, A Definition of Rurality, 2024
+        </p>
+      </section>
 
       <p>
         Following a brief hiatus, I have chosen to expand the scope of this research to encompass the entire continental United States, analyzing each state individually. The goal of this phase is to develop a series of peer-reviewed scholarly articles suitable for publication in academic journals. The modeling and geospatial analysis processes are computationally intensive; the original dissertation required approximately 60 hours of geospatial processing across four Mac Minis, supplemented by $2,000 in AWS credits. Variable selection from 918 fields required 13 hours, and the subsequent modeling process an additional 34 hours.
