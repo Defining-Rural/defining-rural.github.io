@@ -17,7 +17,7 @@ seo_description: "About Defining Rurality - Aligning Education and Geography."
     </header>
     <div>
       <p>
-        It was towards the end of the COVID-19 pandemic that SHODAN's quote from "System Shock" came to mind. As a former student turned adjunct faculty, it was disheartening to walk the halls once filled with conversation completely void. Places dedicated to student life consumed by administrative offices and a commons area silent enough that you can hear a paperclip strike the carpet. It was this perspective that prompted the thought that, even without the students, a "perfect" educational institution would manage to persist.
+        Toward the end of the COVID-19 pandemic, SHODAN's quote from System Shock came to mind. As a former student turned adjunct faculty member, I found it disheartening to walk through halls once filled with conversation, now empty. Spaces once dedicated to student life had been consumed by administrative offices, and the commons area was so quiet that a falling paperclip could be heard striking the carpet. From this perspective, I began to consider whether an ostensibly "perfect" educational institution might continue to operate - even without students.
       </p>
 
       <section class="stripe">
@@ -28,10 +28,6 @@ seo_description: "About Defining Rurality - Aligning Education and Geography."
         <p class="right">Cromartie &
   Bucholtz, 2008; United States Department of Health and Human Services, 2020</p>
       </section>
-
-      <p>
-        Toward the end of the COVID-19 pandemic, SHODAN's quote from System Shock came to mind. As a former student turned adjunct faculty member, I found it disheartening to walk through halls once filled with conversation, now empty. Spaces once dedicated to student life had been consumed by administrative offices, and the commons area was so quiet that a falling paperclip could be heard striking the carpet. From this perspective, I began to consider whether an ostensibly "perfect" educational institution might continue to operate - even without students.
-      </p>
 
       <p>
         This reflection resurfaced as I developed my dissertation topic. I questioned why existing frameworks often rely on "perfect" definitions that are frequently adapted to meet policy or research needs. It was the significant discrepancies in defining rural populations and the reliance on proximity to urban centers as a primary determinant that suggested an opportunity for deeper analysis. This led me to pose a key research question: <em>What if distance from an urban center were removed from the equation?</em>
