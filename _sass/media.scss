@@ -4,10 +4,6 @@
     height: auto;
   }
 
-  body > header > h1 img {
-    margin: 0 auto;
-  }
-
   body > header > nav {
     text-align: center;
   }
@@ -21,7 +17,9 @@
     padding: 0.5em 2em;
   }
 
-  section.hero > div h3 {
-    font-size: 150%;
+  .grid {
+    &.split {
+      display: block;
+    }
   }
 }

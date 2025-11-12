@@ -10,40 +10,6 @@ $colorBlue: #13294b;
 $colorBlack: rgba(0,0,0,1);
 $bodyFont: "Roboto Flex", -apple-system, "system-ui", sans-serif;
 
-html {
-  scroll-behavior: smooth;
-}
-
-a {
-  color: $colorWhite;
-  text-decoration: none;
-}
-
-a:hover, button:hover {
-  cursor: pointer;
-}
-
-h1,h2,h3,h4,h5 {
-  margin: 0;
-  padding: 0;
-}
-
-figure {
-  figcaption {
-    font-size: 100%;
-    font-style: italic;
-    padding: 1em 0;
-  }
-}
-
-.rel {
-  position: relative;
-}
-
-.abs {
-  position: absolute;
-}
-
 .no-break {
   white-space: nowrap;
 }
@@ -52,66 +18,89 @@ figure {
   text-align: center;
 }
 
-.right {
-  text-align: right;
+.arrow-container {
+  position: relative;
+  animation: bounceUpDown 2s ease-in-out infinite;
+  
+  @keyframes bounceUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .down-arrow {
+    position: relative;
+    color: $colorLightBlue;
+    font-size: 6.0vmin;
+
+    &:hover {
+      color: $colorWhite;
+      cursor: pointer;
+    }
+  }
 }
 
-.dark-bg {
-  background-color: $colorDarkGray;
-}
+.quote-list {
+  margin-top: 10vh;
 
-.btn {
-  padding: 1em 0.5em;
-  color: $colorWhite;
-
-  &.orange {
-    background-color: $colorOrange;
-  }
-  &.blue {
-    background-color: $colorLightBlue;
-    
-  }
-}
-
-.content {
-  padding: 1em;
-
-  header {
-    margin-bottom: 1em;
-  }
-
-  h3 {
-    font-weight: 500;
-    font-size: 125%;
-  }
-
-  .text-container {
-    padding: 1em;
+  .icon-heading {
+    font-size: calc(12px + 2vmin);
+    text-align: center;
+    color: $colorLightBlue;
   }
 
   p {
-    font-size: 115%;
+    font-size: calc(12px + 1.25vmin);
+  }
+
+  h4 {
+    font-size: 4vmin;
+    padding: 1em 0;
+    text-align: center;
   }
 }
 
-.circle {
-  border-radius: 5em;
-  border: 2px solid $colorLightBlue;
-  &.small {
-    width: 90px;
-    height: 90px;
+.grid {
+  display: grid;
+  grid-gap: 1em;
+
+  &.gap-lg {
+    grid-gap: 2em;
   }
-  &.medium {
-    width: 150px;
-    height: 150px;
+
+  &.split {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.three-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .span-2 {
+    grid-column: span 2;
+  }
+
+  .span-3 {
+    grid-column: span 3;
   }
 }
 
-section.stripe {
+.stripe {
   position: relative;
   text-align: center;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
+  h3 {
+    font-size: 6vmin;
+    padding: 1em 0;
+  }
 
   &:before {
     content: "";
@@ -133,53 +122,114 @@ section.stripe {
     bottom: 0;
     transform: translate(-50%, 0%);
   }
+}
 
-  h3 {
-    font-size: 200%;
-    font-weight: 400;
-    padding: 1em 0;
+.content {
+  padding: 1em 1.5em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: $colorWhite;
+  text-decoration: none;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: calc(12px + 2.0vmin);
+}
+
+blockquote {
+  position: relative;
+  font-size: calc(12px + 2.0vmin);
+  padding-left: 1.5em;
+
+  &:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 10vmin;
+    color: $colorGray;
+    position: absolute;
+    left: -20px;
+    top: -20px;
   }
 
-  p:first-of-type {
-    padding-top: 2em;
-  }
+  cite {
+    color: $colorGray;
+    font-size: calc(12px + 1.8vmin);
+    display: block;
+    margin-top: 5px;
+    text-align: right;
 
-  p:last-of-type {
-    padding-bottom: 2em;
+    &:before {
+      content: "\2014 \2009";
+    }
   }
 }
 
-.grid {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+article {
+  position: relative;
+  margin: 1em;
 
-  &.two-thirds {
-    & > div {
-      padding: 1em;
+  header {
+    position: relative;
+
+    p {
+      font-size: calc(12px + 0.75vmin);
     }
-    & > div:first-of-type {
-      grid-column: span 2;
+
+    img {
+      opacity: 0.8;
+      border-radius: 1em;
+    }
+
+    .btn {
+      border: 1px solid $colorWhiteFade;
+    }
+
+    & > div:not(.title) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $colorDarkGray;
+      border-top-right-radius: 1em;
+      font-size: 1vmin;
+      .icon {
+        padding-left: 1em;
+        padding-right: 0.5em;
+      }
+      .btn {
+        border-top-right-radius: 1em;
+        padding: 1em;
+        margin-left: 1em;
+      }
     }
   }
 
-  &.split {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  }
+  .title {
+    position: absolute;
+    bottom: 4px;
+    background: $colorDarkGray;
+    border-bottom-left-radius: 1em;
+    padding: 0.5em 1em;
+    
 
-  &.three-columns {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
-
-  .span-2 {
-    grid-column: span 2;
-  }
-}
-
-ul.grid {
-  list-style-type: none;
-  &.small {
-    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    p {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
@@ -236,185 +286,31 @@ body {
   }
 }
 
-section.hero {
-  padding: 5% 1em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  grid-gap: 2em;
+section.tile {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
 
-  & > div:first-of-type {
-    min-height: 200px;
-    max-width: 95%;
-  }
-
-  header {
-    position: relative;
-    img {
-      opacity: 0.8;
-    }
-    & > div {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: $colorDarkGray;
-      border-top-right-radius: 1em;
-      font-size: 90%;
-      .icon {
-        padding-left: 1em;
-        padding-right: 0.5em;
-      }
-      .btn {
-        border-top-right-radius: 1em;
-        padding: 1em;
-        margin-left: 1em;
-      }
-    }
-  }
-
-  footer {
-    position: absolute;
-    bottom: 4px;
-    padding: 1em;
-    background: $colorDarkGray;
-    border-bottom-left-radius: 1em;
-
-    width: 85%;
-
-    p {
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  & > div {
-    position: relative;
-    margin-top: 1em;
-    margin-bottom: 2.5em;
-    h3 {
-      font-size: 200%;
-    }
-    & > div {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1em;
-
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      position: relative;
-    }
-
-    img {
-      border-radius: 1em;
-    }
+  &.landing {
+    height: 75vh;
   }
 }
 
-main.page {
-  position: relative;
+.landing-prompt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 
-  & > header {
-    position: relative;
-    min-height: 40vh;
-  
-    .gallery {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      opacity: 0.8;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      clip-path: ellipse(64% 74% at 50% 36%);
-    }
+  h3 {
+    font-size: 6.0vmin;
+    padding: 0 1em;
   }
 
-  .heading-container {
-    background-color: rgba(20,20,20,0.9);
-    width: 60vw;
-    text-align: center;
-    opacity: 1;
-    padding: 1em;
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
-    margin: 0 auto;
-
-    & > img {
-      width: 150px;
-      height: 150px;
-      border-radius: 10em;
-    }
-
-    h2 {
-      font-size: 175%;
-      font-weight: 400;
-    }
-
-    p {
-      font-size: 110%;
-      &:nth-of-type(2) {
-        text-align: right;
-        font-style: italic;
-      }
-    }
-  }
-
-  & > div.content {
-    position: absolute;
-    top: 33%;
-
-    & > section {
-      background-color: $colorMediumGray;
-    }
-  }
-
-  .infopanelgroup {
-    & > header {
-      margin-bottom: 2em;
-      h3 {
-        font-size: 200%;
-        font-weight: 400;
-      }
-    }
-
-    & > div > div {
-      padding: 1em;
-      border-radius: 0.5em;
-      border: 1px solid $colorWhiteFade;
-
-      h4 {
-        font-size: 130%;
-        font-weight: 400;
-        text-align: center;
-      }
-    }
-
-    .icon-heading {
-      color: $colorLightBlue;
-      font-size: 175%;
-      text-align: center;
-      margin-bottom: 0.5em;
-    }
-  }
-
-  section.references {
-    margin-top: 4em;
-    & > div {
-      margin-left: 2em;
-    }
-
-    h3 {
-      font-weight: 400;
-    }
+  p {
+    font-size: 3.5vmin;
+    padding: 0 1em;
   }
 }
