@@ -18,7 +18,7 @@
   }
 
   .grid {
-    &.split {
+    &.split, &.three-columns {
       display: block;
     }
   }
