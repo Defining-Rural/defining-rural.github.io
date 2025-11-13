@@ -230,6 +230,13 @@ article {
       margin: 0;
       padding: 0;
     }
+
+    .award {
+      margin-top: 1em;
+      .icon {
+        color: $colorOrange;
+      }
+    }
   }
 }
 
