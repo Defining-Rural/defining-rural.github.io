@@ -148,6 +148,14 @@ h1,h2,h3,h4,h5 {
 
 p {
   font-size: calc(12px + 2.0vmin);
+
+  &.small {
+    font-size: calc(12px + 1.25vmin);
+  }
+
+  &.medium {
+    font-size: calc(12px + 1.5vmin);
+  }
 }
 
 blockquote {
@@ -179,7 +187,7 @@ blockquote {
   }
 }
 
-article {
+article, .figure {
   position: relative;
   margin: 1em;
 
@@ -237,6 +245,12 @@ article {
         color: $colorOrange;
       }
     }
+  }
+}
+
+.figure {
+  .title {
+    bottom: 0;
   }
 }
 
@@ -303,6 +317,15 @@ section.tile {
   }
 }
 
+.middle-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
 .landing-prompt {
   position: absolute;
   top: 50%;
@@ -319,5 +342,34 @@ section.tile {
   p {
     font-size: 3.5vmin;
     padding: 0 1em;
+  }
+}
+
+.methodology-container {
+  & > div {
+    position: relative;
+    min-height: calc(250px + 20vh);
+
+    &:not(.figure) {
+      h4 {
+        font-size: calc(14px + 1.75vmin);
+      }
+    }
+  }
+
+  .figure {
+    position: relative;
+    opacity: 0.8;
+    border-radius: 1em;
+  }
+
+  .method-locales {
+    background-image: url(/assets/images/method/method_locales.webp);
+    background-size: cover;
+  }
+
+  .method-districts {
+    background-image: url(/assets/images/method/method_district_to_blocks.webp);
+    background-size: cover;
   }
 }
