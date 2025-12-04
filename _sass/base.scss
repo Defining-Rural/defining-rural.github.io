@@ -378,3 +378,15 @@ section.tile {
     background-size: cover;
   }
 }
+
+section.analysis {
+  background-image: url(/assets/images/method/communities_vars.webp);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .landing-prompt {
+    padding: 2em 0;
+    background-color: $colorMediumGray;
+  }
+}
